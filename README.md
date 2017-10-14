@@ -1,5 +1,7 @@
-Hallowuino v0.23                      
-The the Hallowuino is an arduino based Halloween Prop controller. 
+<h1 align="center">Hallowuino v0.23</h1>
+<p align="center">Hallowuino is an Arduino based electronic Halloween prop controller.</p>
+<p align="center"><a href="#site">Check It Out!</a> | <a href="#documentation">Read the Docs</a></p>
+                     
 This controller utilizes the "test button" interface found on most electronic halloween props, although it can 
 control anything with a button or switch. Additionally the device has inputs for Motion Sensors, footpads, or other trigger input, 
 including online interfaces like IFTTT and IoT protocols such as MQTT.
