@@ -8,6 +8,6 @@ including online interfaces like IFTTT and IoT protocols such as MQTT.
 
 This project is in active development, and soon will open an Indigogo campaign for funding of this project. For now it is in the development phase and none of this code should be used. Please contact info@hallowuino.com if you want to purchase or contribute to the project.
 
-![Hallowuino PCB](/images/Hallowuino-PCB.png?raw=true "Hallowuino PCB")
+<img src="/images/Hallowuino-PCB.png" width="200">
 
 
