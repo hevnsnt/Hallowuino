@@ -1,8 +1,8 @@
 <h1 align="center">Hallowuino v0.23</h1>
-<p align="center">Hallowuino is an Arduino based electronic Halloween prop controller.
-
-<img src="/images/Hallowuino-PCB.png" width="200" align="center">   </p><br/>
-<p align="center"><a href="#site">Check It Out!</a> | <a href="#documentation">Read the Docs</a></p>
+<p align="center">Hallowuino is an Arduino based electronic Halloween prop controller.</p>
+<p align="center">
+<img src="/images/Hallowuino-PCB.png" width="200" align="center"> <br/>
+<a href="#site">Check It Out!</a> | <a href="#documentation">Read the Docs</a></p>
 
 This controller utilizes the "test button" interface found on most electronic halloween props, although it can 
 control anything with a button or switch. Additionally the device has inputs for Motion Sensors, footpads, or other trigger input, 
