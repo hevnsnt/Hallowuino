@@ -8,6 +8,9 @@ Easily animate electronic props that are commonly found at Target, Walmart, Home
 
 <p align="center"><img src="/images/Example-Prop.jpg" width="200"> <img src="/images/Button.jpg" width="200"> <img src="/images/Try-Me-Interface.jpg" width="200"> <br/></p>
 
+Example Video:
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/72wD3h66Z6o/0.jpg)](http://www.youtube.com/watch?v=72wD3h66Z6o "Hallowuino Example Video")
+
 Please contact info@hallowuino.com if you want to purchase or contribute to the project.
 
 <h2 align="center">Features</h2>
