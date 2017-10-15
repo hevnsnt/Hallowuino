@@ -4,7 +4,7 @@
 <img src="/images/Hallowuino-pop.png" width="200" align="center"> <br/>
 <a href="#site">Check It Out!</a> | <a href="#documentation">Read the Docs</a></p>
 
-Easily animate electronic props that are commonly found at Target, Walmart, HomeDepot and Dollar Stores. This controller utilizes the "Try Me" interface found on most electronic halloween props, although it can control anything with a button or switch. Additionally the device has inputs for Motion Sensors, footpads, or other trigger input, including online interfaces like IFTTT and IoT protocols such as MQTT.
+Easily animate electronic props that are commonly found at Target, Walmart, HomeDepot and Dollar Stores. This controller utilizes the "Try Me" interface found on most electronic halloween props, although it can control anything with a button or switch. Additionally the Hallowuino has inputs for Motion Sensors, footpads, or other trigger input, including online interfaces like IFTTT and IoT protocols such as MQTT.
 
 <p align="center">
 <img src="/images/Workflow.png" width="600"></p><br/>
@@ -39,6 +39,12 @@ Yes, the Hallowuino.ino file will need to be uploaded to your Arduino before Hal
 
 **3. Can the Hallowuino be used to control 12V/24v/120v/240v devices such as lamps or Solenoid?** <br/>
 **NO!** The Hallowuino does NOT use Solid State High Voltage relays.  It is intended for battery operated props and not for high voltage devices, and would be damaged if used in this way. I suggest you look at the PicoBoo or BooBox Controllers. However, if I get enough feedback and/or requests for this capability, I may add this to Hallowuino v1 (production run).
+
+**4. How is the Hallowuino Powered? Do I have to run a seperate power supply?** <br/>
+The Hallowuino plugs directly on top of a full sized Arduino, and gets its power directly from the Arduino. You will need to power the Arduino via the normal methods (DC adapter or USB)
+
+**5. What kind of trigger inputs can I use?** <br/>
+This is still being developed, so this answer may change with time. Pretty much any two pole button switch (useful for footpads, door bells, etc) or +5v arduino compatible sensor; such as motion sensors, light sensors, distance sensors, or laser triggers.
 
 
 
