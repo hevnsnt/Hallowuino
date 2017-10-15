@@ -8,9 +8,17 @@ This controller utilizes the "test button" interface found on most electronic ha
 control anything with a button or switch. Additionally the device has inputs for Motion Sensors, footpads, or other trigger input, 
 including online interfaces like IFTTT and IoT protocols such as MQTT.
 
-This project is in active development, and soon will open an Indigogo campaign for funding of this project. For now it is in the development phase and none of this code should be used. 
+This project is in active development, and soon will open an Indigogo campaign for puchase/funding options. For now it is in the development phase and none of this code should be used. 
 
 Please contact info@hallowuino.com if you want to purchase or contribute to the project.
+
+<h2 align="center">Features</h2>
+  * Arduino Shield Formfactor (plugs in directly to UNO sized Arduinos)
+  * Controls the timing for 8 Electronic props, through the "test" or "try me" button interface
+  * Currently supports 2 Motion Sensors and 2 "Trigger" type inputs. (Like footpads, buttons, etc)
+  * Fully configurable via a easy to use web interface
+  * Future IFTTT support
+  * Future MQTT support
 
 
 
