@@ -18,6 +18,7 @@ Easily animate electronic props that are commonly found at Target, Walmart, Home
   * Arduino Shield Formfactor: Plugs in directly onto a full sized Arduino (Such as the UNO or similar)
   * Controls the timing for 8 Electronic props, through the "test" or "try me" button interface
   * Currently supports 2 Motion Sensors and 2 "Trigger" type inputs. (Like footpads, buttons, etc)
+  * Arduino based, meaning it is fully hackable, and beginner friendly! Open source hardware (eventually) and software means that if you don't like how something works -- change it!  Want to add a feature? Add it! Want to make your own PCB? Make it!
   * Fully configurable via a easy to use web interface (development in progress)
   * IFTTT support (Hardware supported, development planned) [[More info about IFTTT]](https://ifttt.com/)
   * MQTT support (Hardware supported, development planned) [[More info about MQTT]](https://learn.adafruit.com/adafruit-io/mqtt-api) 
