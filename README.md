@@ -4,7 +4,7 @@
 <img src="/images/Hallowuino-pop.png" width="200" align="center"> <br/>
 <a href="#site">Check It Out!</a> | <a href="#documentation">Read the Docs</a></p>
 
-Easily animate electronic props that are commonly found at Target, Walmart, HomeDepot and Dollar Stores. This controller utilizes the "Try Me" interface found on most electronic halloween props, although it can control anything with a button or switch. Additionally the Hallowuino has inputs for Motion Sensors, footpads, or other trigger input, including online interfaces like IFTTT and IoT protocols such as MQTT.
+Easily animate electronic props that are commonly found at Target, Walmart, HomeDepot and Dollar Stores. This controller utilizes the "Try Me" interface found on most electronic halloween props, although it can control anything with a button or switch. Additionally the Hallowuino has inputs for Motion Sensors, footpad, or other trigger inputs; including online interfaces like IFTTT and IoT protocols such as MQTT.
 
 <p align="center">
 <img src="/images/Workflow.png" width="600"></p><br/>
