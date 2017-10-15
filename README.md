@@ -31,10 +31,12 @@ Example:<br/>
 
 <h2 align="center">F.A.Q.</h1>
 **1. Does the Hallowuino require any other hardware?**
-Yes, in its current form, the Hallowuino is a Arduino Shield, and requires a full sized Arduino (UNO or similar). Shields are boards that can be plugged on top of the Arduino PCB extending its capabilities. 
 
-**2. Do I need to add any code to my existing Arduino to use the Hallowuino?"**
-Yes, the Hallowuino.ino file will need to be uploaded to your Arduino before Hallowuino will function properly.
+  Yes, in its current form, the Hallowuino is a Arduino Shield, and requires a full sized Arduino (UNO or similar). Shields are boards that can be plugged on top of the Arduino PCB extending its capabilities. 
+
+**2. Do I need to add any code to my existing Arduino to use the Hallowuino?**
+
+  Yes, the Hallowuino.ino file will need to be uploaded to your Arduino before Hallowuino will function properly.
 
 
 **WARNING** The Hallowuino does NOT use Solid State High Voltage relays.  It is intended for battery operated props and not for high voltage devices. This is not the same as PicoBoo or BooBox Controllers.
