@@ -30,16 +30,15 @@ Example:<br/>
 [![Hallowuino Example Video](http://img.youtube.com/vi/72wD3h66Z6o/0.jpg)](http://www.youtube.com/watch?v=72wD3h66Z6o "Hallowuino Example Video")
 
 <h2 align="center">F.A.Q.</h1>
-**1. Does the Hallowuino require any other hardware?**
 
-  Yes, in its current form, the Hallowuino is a Arduino Shield, and requires a full sized Arduino (UNO or similar). Shields are boards that can be plugged on top of the Arduino PCB extending its capabilities. 
+**1. Does the Hallowuino require any other hardware?** <br/>
+Yes, in its current form, the Hallowuino is a Arduino Shield, and requires a full sized Arduino (UNO or similar). Shields are boards that can be plugged on top of the Arduino PCB extending its capabilities. 
 
-**2. Do I need to add any code to my existing Arduino to use the Hallowuino?**
+**2. Do I need to add any code to my existing Arduino to use the Hallowuino?** <br/>
+Yes, the Hallowuino.ino file will need to be uploaded to your Arduino before Hallowuino will function properly.
 
-  Yes, the Hallowuino.ino file will need to be uploaded to your Arduino before Hallowuino will function properly.
-
-
-**WARNING** The Hallowuino does NOT use Solid State High Voltage relays.  It is intended for battery operated props and not for high voltage devices. This is not the same as PicoBoo or BooBox Controllers.
+**3. Can the Hallowuino be used to control 12V/24v/120v/240v devices such as lamps or Solenoid?** <br/>
+**NO!** The Hallowuino does NOT use Solid State High Voltage relays.  It is intended for battery operated props and not for high voltage devices, and would be damaged if used in this way. I suggest you look at the PicoBoo or BooBox Controllers. However, if I get enough feedback and/or requests for this capability, I may add this to Hallowuino v1 (production run).
 
 
 
