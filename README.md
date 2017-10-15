@@ -23,7 +23,7 @@ Please contact info@hallowuino.com if you want to purchase or contribute to the 
   * MQTT support (Hardware supported, planned development)
   
 <h2 align="center">How does it work?</h1>
-The Hallowuino Controller can be triggered by a motion sensor, footpads, laser triggers, or even by network commands like IFTTT or MQTT and then simulates a "Button Click" to your favorite electonic prop. Although it works best with devices that have a "Try Me" button it is not limited to only those devices, if you have a prop or device that has a button, the Hallowuino can control it. This project is in active development, and soon will open an Indigogo campaign for puchase/funding options. For now it is in the development phase and none of this code should be used. <br/><br/>
+The Hallowuino Controller simulates a "Button Click" to your favorite electonic prop, and allows you to electronically control the timing of this button press. Additionally the Hallowuino can be triggered by a motion sensor, footpads, laser triggers, or even by network commands like IFTTT or MQTT. Although it works best with devices that have a "Try Me" button it is not limited to only those devices, if you have a prop or device that has a button, the Hallowuino can control it. This project is in active development, and soon will open an Indigogo campaign for puchase/funding options. For now it is in the development phase and none of this code should be used. <br/><br/>
 
 
 Example:<br/>
@@ -51,6 +51,9 @@ Yes! Any USB battery charger will work perfectly for powering the Hallowuino (vi
 
 **5. Can the sequence run and repeat indefinitely without needing to be triggered each time?** <br/>
 Absolutely! Just don't add a sensor event, and the sequence will simply repeat indefinitely. 
+
+**6. Wait a second... Don’t these props already come with motion sensors?** <br/>
+Often these type of props use a photo-resistor as a cheap “motion sensor.” Photo-resistors looks for changes in light, and may work well in well lit areas and detect shadows as people walk by. However, they do not work well in very dark areas or outside. The Hallowuino was created as a solution to the my frustration where props would often trigger with the wind, but not when people walked by.  ARRRGH!
 
 
 
