@@ -53,7 +53,7 @@ Yes! Any USB battery charger will work perfectly for powering the Hallowuino (vi
 Absolutely! Just don't add a sensor event, and the sequence will simply repeat indefinitely. 
 
 **6. Wait a second... Don’t these props already come with motion sensors?** <br/>
-Often these type of props use a photo-resistor as a cheap “motion sensor.” Photo-resistors looks for changes in light, and may work well in well lit areas and detect shadows as people walk by. However, they do not work well in very dark areas or outside. The Hallowuino was created as a solution to the my frustration where props would often trigger with the wind, but not when people walked by.  ARRRGH! Using proper PIR (**P**assive **I**nfraRed **S**ensor) [![More info about PIR sensors]](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/how-pirs-work "[More info about PIR sensors]") solves this problem and allows for fine tuning and timed displays.
+Often these type of props use a photo-resistor as a cheap “motion sensor.” Photo-resistors looks for changes in light, and may work well in well lit areas and detect shadows as people walk by. However, they do not work well in very dark areas or outside. The Hallowuino was created as a solution to the my frustration where props would often trigger with the wind, but not when people walked by.  ARRRGH! Using proper PIR (**P**assive **I**nfraRed **S**ensor) [[More info about PIR sensors]](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/how-pirs-work) solves this problem and allows for fine tuning and timed displays.
 
 
 
