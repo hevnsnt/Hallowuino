@@ -6,9 +6,10 @@
 
 Easily animate electronic props that are commonly found at Target, Walmart, HomeDepot and Dollar Stores. This controller utilizes the "Try Me" interface found on most electronic halloween props, although it can control anything with a button or switch. Additionally the device has inputs for Motion Sensors, footpads, or other trigger input, including online interfaces like IFTTT and IoT protocols such as MQTT.
 
-<p align="center"><img src="/images/Example-Prop.jpg" width="200"> <img src="/images/Button.jpg" width="200"> <img src="/images/Try-Me-Interface.jpg" width="200"> <br/>
+<p align="center">
+<img src="/images/Example-Prop.jpg" width="200"> <img src="/images/Button.jpg" width="200"> <img src="/images/Try-Me-Interface.jpg" width="200"> <br/></p>
 
-Example Video:
+<p align="center">Example Video:
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/72wD3h66Z6o/0.jpg)](http://www.youtube.com/watch?v=72wD3h66Z6o "Hallowuino Example Video")</p>
 
 Please contact info@hallowuino.com if you want to purchase or contribute to the project.
