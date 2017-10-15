@@ -15,7 +15,7 @@ Please contact info@hallowuino.com if you want to contribute to the project.
 
 <h2 align="center">Features</h2>
 
-  * Arduino Shield Formfactor: Plugs in directly onto full sized Arduinos (Such as the UNO or similar)
+  * Arduino Shield Formfactor: Plugs in directly onto a full sized Arduino (Such as the UNO or similar)
   * Controls the timing for 8 Electronic props, through the "test" or "try me" button interface
   * Currently supports 2 Motion Sensors and 2 "Trigger" type inputs. (Like footpads, buttons, etc)
   * Fully configurable via a easy to use web interface (development in progress)
