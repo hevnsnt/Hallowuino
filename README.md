@@ -18,9 +18,9 @@ Please contact info@hallowuino.com if you want to purchase or contribute to the 
   * Arduino Shield Formfactor: Plugs in directly onto full sized Arduinos (Such as the UNO or similar)
   * Controls the timing for 8 Electronic props, through the "test" or "try me" button interface
   * Currently supports 2 Motion Sensors and 2 "Trigger" type inputs. (Like footpads, buttons, etc)
-  * Fully configurable via a easy to use web interface
-  * IFTTT support (Hardware supported, planned development)
-  * MQTT support (Hardware supported, planned development)
+  * Fully configurable via a easy to use web interface (development in progress)
+  * IFTTT support (Hardware supported, development planned) [[More info about IFTTT]](https://ifttt.com/)
+  * MQTT support (Hardware supported, development planned) [[More info about MQTT]](https://learn.adafruit.com/adafruit-io/mqtt-api) 
   
 <h2 align="center">How does it work?</h1>
 The Hallowuino Controller simulates a "Button Click" to your favorite electonic prop, and allows you to electronically control the timing of this button press. Additionally the Hallowuino can be triggered by a motion sensor, footpads, laser triggers, or even by network commands like IFTTT or MQTT. Although it works best with devices that have a "Try Me" button it is not limited to only those devices, if you have a prop or device that has a button, the Hallowuino can control it. This project is in active development, and soon will open an Indigogo campaign for puchase/funding options. For now it is in the development phase and none of this code should be used. <br/><br/>
