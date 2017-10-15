@@ -6,7 +6,7 @@
 
 Easily animate electronic props that are commonly found at Target, Walmart, HomeDepot and Dollar Stores. This controller utilizes the "test button" interface found on most electronic halloween props, although it can control anything with a button or switch. Additionally the device has inputs for Motion Sensors, footpads, or other trigger input, including online interfaces like IFTTT and IoT protocols such as MQTT.
 
-<img src="/images/Example-Prop.jpg" width="200" align="center"> <img src="/images/Button.jpg" width="200" align="center"> <img src="/images/Try-Me-Interface.jpg" width="200" align="center"> <br/>
+<p align="center"><img src="/images/Example-Prop.jpg" width="200"> <img src="/images/Button.jpg" width="200"> <img src="/images/Try-Me-Interface.jpg" width="200"> <br/></p>
 
 This project is in active development, and soon will open an Indigogo campaign for puchase/funding options. For now it is in the development phase and none of this code should be used. 
 
