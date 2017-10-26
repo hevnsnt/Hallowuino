@@ -66,7 +66,7 @@ void loop()
   if (digitalRead(MotionSensorPin) == HIGH) {     // check if the input is HIGH
     if (triggerState == LOW) {
       digitalWrite(ledPin, HIGH); // turn LED ON
-      Serial.println("[+] Motion detected!");
+      Serial.println(F("[+] Motion detected!"));
 
       // Triggering Prop 1
       triggerProp(1);
@@ -91,7 +91,7 @@ void loop()
       
     if (pirState == LOW) {
       // we have just turned on
-      Serial.println("Motion detected!");
+      Serial.println(F("Motion detected!"));
       // We only want to print on the output change, not state
       pirState = HIGH;
     }
@@ -99,7 +99,7 @@ void loop()
     digitalWrite(ledPin, LOW); // turn LED OFF
     if (pirState == HIGH){
       // we have just turned off
-      Serial.println("Motion ended!");
+      Serial.println(F("Motion ended!"));
       triggerState = 0;
       // We only want to print on the output change, not state
       pirState = LOW;
@@ -111,34 +111,34 @@ void triggerProp(unsigned int Prop)
 {
   switch (Prop) {
     case 1:
-      Serial.println("[Action] >>>> Triggering Prop 1");
+      Serial.println(F("[Action] >>>> Triggering Prop 1"));
       digitalWrite(Prop1Pin, HIGH);
       delay(clickspeed);
       digitalWrite(Prop1Pin, LOW); 
       break;
     case 2:
       // Delaying for Prop 2
-      Serial.println("[Paused] >>>> Prop 2 Delay");
+      Serial.println(F("[Paused] >>>> Prop 2 Delay"));
       delay(delayForProp2);
-      Serial.println("[Action] >>>> Triggering Prop 2");
+      Serial.println(F("[Action] >>>> Triggering Prop 2"));
       digitalWrite(Prop2Pin, HIGH);
       delay(clickspeed);
       digitalWrite(Prop2Pin, LOW);
       break;
     case 3:
       // Delaying for Prop 3
-      Serial.println("[Paused] >>>> Prop 3 Delay");
+      Serial.println(F("[Paused] >>>> Prop 3 Delay"));
       delay(delayForProp3);
-      Serial.println("[Action] >>>> Triggering Prop 3");
+      Serial.println(F("[Action] >>>> Triggering Prop 3"));
       digitalWrite(Prop3Pin, HIGH);
       delay(clickspeed);
       digitalWrite(Prop3Pin, LOW);
       break;
     case 4:
       // Delaying for Prop 4
-      Serial.println("[Paused] >>>> Prop 4 Delay");
+      Serial.println(F("[Paused] >>>> Prop 4 Delay"));
       delay(delayForProp4);
-      Serial.println("[Action] >>>> Triggering Prop 4");
+      Serial.println(F("[Action] >>>> Triggering Prop 4"));
       digitalWrite(Prop4Pin, HIGH);
       delay(clickspeed);
       digitalWrite(Prop4Pin, LOW);
