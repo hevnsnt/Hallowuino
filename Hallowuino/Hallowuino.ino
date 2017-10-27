@@ -31,7 +31,7 @@ unsigned int clickspeed = 4000; //4066 Tuning//    MMMMMMMMMMMMMNho`-hdMNmh/`   
 unsigned int delayForRearm = 1000;           //    MMMMMMMMMMMMMMNdy.`ymNMNmh+.  .yNNNNNNNy.smNNNh/  `  omNNNNms`    `mNNh-             :mm
 // Declare any other variables needed        //    MMMMMMMMMMMMMMMMhd:`+mNMMmNhy:``omNNNNNs  `::.` -yd:  ./oo+-`:+oooomd+`             `ddM
 bool triggerState = LOW;                     //    MMMMMMMMMMMMMMMMMmmo`/dNNhdNNmho::ymNNs`       -hmNm+      .hmNNNNd+``.-:::-. `    `ydmM
-                                             //    MMMMMMMMMMMMMMMMMMmmy-y:+.:hmMNmdhsoydmy:`      `.--.      hNNNNh+-/shddNmmNhhh.  -hdNMM
+int calibrationTime = 30;                    //    MMMMMMMMMMMMMMMMMMmmy-y:+.:hmMNmdhsoydmy:`      `.--.      hNNNNh+-/shddNmmNhhh.  -hdNMM
 bool pirState = LOW;                         //    MMMMMMMMMMMMMMMMMMMMdh.`.o-ymMMMMNNmhhhmmds:.              mmhs/:+hmmMMMMMMMMNh:`+hmMMMM
 bool buttonState = LOW;                      //    MMMMMMMMMMMMMMMMMMMdy. .:o+o/+yNNMMMNNNmdooddyo+:-.``     :mooshdmNMMMMMMMMMNys+ydNMMMMM
 const int ledPin =  13;                      //    MMMMMMMMMMMMMMMMMMhy/-`.-.-:s/sdNMMMMMMMs `s+-/syhhhhhhhhyhhhmNNMMMMMMMMMMNdyohmdmNNNMMM
@@ -59,7 +59,18 @@ void setup()
 
   // Start Serial for debugging purposes
   Serial.begin(9600); 
-}
+
+  //give the sensor some time to calibrate
+  Serial.println("// Hallowuino //");
+  Serial.print("// calibrating sensor -");
+    for(int i = 0; i < calibrationTime; i++){
+      Serial.print(">");
+      delay(1000);
+      }
+    Serial.println(" done [!]");
+    Serial.println("SENSOR ACTIVE");
+    delay(50);
+  }
 
 void loop()
 {
