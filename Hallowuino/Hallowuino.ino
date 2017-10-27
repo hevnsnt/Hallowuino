@@ -16,24 +16,24 @@
 // Values, unless your setup is different    //      .dh-  .sdhNMMMMMMMMMMMMMMMNmh:     -yh/`                  `:yy:`       -smNMMMMMMMMMMM
 ///////////////////////////////////////////////       .dm/ommmMMMMMMMMMMMMMMMMmdy.    -yh/`                       -yy:        -ydNMMMMMMMMM
 // Declare which pins props are connected    //        .dmdmMMMMMMMMMMMMMMMMMmdy`   `od+`                           :hy-        :hdNMMMMMMM
-int Prop1Pin = 8;                            //       `omdNMMMMMMMMMMMMMMMMMNmy`   .hh.                               /do`       `+hmMMMMMM
-int Prop2Pin = 9;                            //      .hdhNMMMMMMMMMMMMMMMMMmmh`   -do`                                 `sh-        .ydMMMMM
-int Prop3Pin = 10;                           //    o/ys`.dmMMMMMMMMMMMMMMMMhd.   -m+                                     :h+         ommMMM
-int Prop4Pin = 11;                           //    mhyy: `ohMMMMMMMMMMMMMMym:   `dN-                                      .N/         /mNMM
+const int Prop1Pin = 8;                      //       `omdNMMMMMMMMMMMMMMMMMNmy`   .hh.                               /do`       `+hmMMMMMM
+const int Prop2Pin = 9;                      //      .hdhNMMMMMMMMMMMMMMMMMmmh`   -do`                                 `sh-        .ydMMMMM
+const int Prop3Pin = 10;                     //    o/ys`.dmMMMMMMMMMMMMMMMMhd.   -m+                                     :h+         ommMMM
+const int Prop4Pin = 11;                     //    mhyy: `ohMMMMMMMMMMMMMMym:   `dN-                                      .N/         /mNMM
                                              //    MMMMmy. odNMMMMMMMMMMMmms    sNNy                                       Nd`         oddM
 // Declare Trigger Pins                      //    MMMMMmm/ -ydMMMMMMMMMNdm`  ` mNNN-   .                                 :NN+         `ddM
-int MotionSensorPin = 3;                     //    MMMMMMMdy``ohNMMMMMMMNm/   ++NNNNd`   +`                              `yNNs          /mm
+const int MotionSensorPin = 3;               //    MMMMMMMdy``ohNMMMMMMMNm/   ++NNNNd`   +`                              `yNNs          /mm
 const int buttonPin = 2;                     //    MMMMMMMMNy- /mdMMMMMMhm.   +dNNNNNh`  -m/             :+yhhdhhs/`    `hNNNs           my
-int delayForProp2 = 3000;                    //    MMMMMMMMMNd+ .hmMMMMmNy    :NNNNm/./  +NNh/`       `ommNNNNNNNy     .hNNNN/           hh
-int delayForProp3 = 3000;                    //    MMMMMMMMMMMhy.`shNMMyN:     hNNm-     -NNNNms/.   .dNNNNNNNNNNo    /mNNNNd`           sm
-int delayForProp4 = 3000;                    //    MMMMMMMMMMMMNh: /hNMhm:     .dNNmhs/.  dNNNNNmmmh-`/NNNNNNNNNN-  -ymNNNNm:            ym
-int clickspeed = 4000; //4066 Tuning         //    MMMMMMMMMMMMMNho`-hdMNmh/`   .dNNNNNmh+-mNNNNNNN/   yNNNNNNNNy  .-+NNNNm/             dy
-                                             //    MMMMMMMMMMMMMMNdy.`ymNMNmh+.  .yNNNNNNNy.smNNNh/  `  omNNNNms`    `mNNh-             :mm
+unsigned int delayForProp2 = 3000; //ms      //    MMMMMMMMMNd+ .hmMMMMmNy    :NNNNm/./  +NNh/`       `ommNNNNNNNy     .hNNNN/           hh
+unsigned int delayForProp3 = 3000;           //    MMMMMMMMMMMhy.`shNMMyN:     hNNm-     -NNNNms/.   .dNNNNNNNNNNo    /mNNNNd`           sm
+unsigned int delayForProp4 = 3000;           //    MMMMMMMMMMMMNh: /hNMhm:     .dNNmhs/.  dNNNNNmmmh-`/NNNNNNNNNN-  -ymNNNNm:            ym
+unsigned int clickspeed = 4000; //4066 Tuning//    MMMMMMMMMMMMMNho`-hdMNmh/`   .dNNNNNmh+-mNNNNNNN/   yNNNNNNNNy  .-+NNNNm/             dy
+unsigned int delayForRearm = 1000;           //    MMMMMMMMMMMMMMNdy.`ymNMNmh+.  .yNNNNNNNy.smNNNh/  `  omNNNNms`    `mNNh-             :mm
 // Declare any other variables needed        //    MMMMMMMMMMMMMMMMhd:`+mNMMmNhy:``omNNNNNs  `::.` -yd:  ./oo+-`:+oooomd+`             `ddM
-int triggerState = 0;                        //    MMMMMMMMMMMMMMMMMmmo`/dNNhdNNmho::ymNNs`       -hmNm+      .hmNNNNd+``.-:::-. `    `ydmM
-int motionVal = 0;                           //    MMMMMMMMMMMMMMMMMMmmy-y:+.:hmMNmdhsoydmy:`      `.--.      hNNNNh+-/shddNmmNhhh.  -hdNMM
-int pirState = LOW;                          //    MMMMMMMMMMMMMMMMMMMMdh.`.o-ymMMMMNNmhhhmmds:.              mmhs/:+hmmMMMMMMMMNh:`+hmMMMM
-int buttonState = 0;                         //    MMMMMMMMMMMMMMMMMMMdy. .:o+o/+yNNMMMNNNmdooddyo+:-.``     :mooshdmNMMMMMMMMMNys+ydNMMMMM
+bool triggerState = LOW;                     //    MMMMMMMMMMMMMMMMMmmo`/dNNhdNNmho::ymNNs`       -hmNm+      .hmNNNNd+``.-:::-. `    `ydmM
+                                             //    MMMMMMMMMMMMMMMMMMmmy-y:+.:hmMNmdhsoydmy:`      `.--.      hNNNNh+-/shddNmmNhhh.  -hdNMM
+bool pirState = LOW;                         //    MMMMMMMMMMMMMMMMMMMMdh.`.o-ymMMMMNNmhhhmmds:.              mmhs/:+hmmMMMMMMMMNh:`+hmMMMM
+bool buttonState = LOW;                      //    MMMMMMMMMMMMMMMMMMMdy. .:o+o/+yNNMMMNNNmdooddyo+:-.``     :mooshdmNMMMMMMMMMNys+ydNMMMMM
 const int ledPin =  13;                      //    MMMMMMMMMMMMMMMMMMhy/-`.-.-:s/sdNMMMMMMMs `s+-/syhhhhhhhhyhhhmNNMMMMMMMMMMNdyohmdmNNNMMM
                                              //    MMMMMMMMMMMMMMMMMMhyd+/`  -.:/ydMMMMMMMh- +do    `.-----:d:`/hNMMMMMMMMMmmy/`/dMmyo-omMM
                                              //    MMMMMMMMMMMMMMMMMMMMmhy+. .:/osmMMMMMMMh :/oo            m++`:yNMMMMMMMMmd-` `hmMNh-sNMM
@@ -55,64 +55,43 @@ void setup()
   pinMode(ledPin, OUTPUT);
   
   // initialize the pushbutton pin as an input:
-  pinMode(buttonPin, INPUT);
+  pinMode(buttonPin, INPUT); //Is the internal pullup needed here ?  
 
   // Start Serial for debugging purposes
   Serial.begin(9600); 
 }
 
-void loop(){
-  motionVal = digitalRead(MotionSensorPin);  // read input value
-  if (motionVal == HIGH) {     // check if the input is HIGH
-    if (triggerState == 0) {
+void loop()
+{
+  if (digitalRead(MotionSensorPin) == HIGH) {     // check if the input is HIGH
+    if (triggerState == LOW) {
       digitalWrite(ledPin, HIGH); // turn LED ON
-      Serial.println("[+] Motion detected!");
+      Serial.println(F("[+] Motion detected!"));
 
       // Triggering Prop 1
-      Serial.println("[Action] >>>> Triggering Prop 1");
-      digitalWrite(Prop1Pin, HIGH);
-      delay(clickspeed);
-      digitalWrite(Prop1Pin, LOW); 
+      triggerProp(1);
     
-      // Delaying for Prop 2
-      Serial.println("[Paused] >>>> Prop 2 Delay");
-      delay(delayForProp2);
 
       // Triggering Prop 2
-      Serial.println("[Action] >>>> Triggering Prop 2");
-      digitalWrite(Prop2Pin, HIGH);
-      delay(clickspeed);
-      digitalWrite(Prop2Pin, LOW);
+      triggerProp(2);
 
-      // Delaying for Prop 3
-      Serial.println("[Paused] >>>> Prop 3 Delay");
-      delay(delayForProp3);
       
       // Triggering Prop 3
-      Serial.println("[Action] >>>> Triggering Prop 3");
-      digitalWrite(Prop3Pin, HIGH);
-      delay(clickspeed);
-      digitalWrite(Prop3Pin, LOW);
+      triggerProp(3);
 
 
-      // Delaying for Prop 4
-      Serial.println("[Paused] >>>> Prop 2 Delay");
-      delay(delayForProp4);
       
       // Triggering Prop 4
-      Serial.println("[Action] >>>> Triggering Prop 4");
-      digitalWrite(Prop4Pin, HIGH);
-      delay(clickspeed);
-      digitalWrite(Prop4Pin, LOW);
+      triggerProp(4);
 
     
-      delay(1000);
+      delay(delayForRearm);
       triggerState = 1;
     }
       
     if (pirState == LOW) {
       // we have just turned on
-      Serial.println("Motion detected!");
+      Serial.println(F("Motion detected!"));
       // We only want to print on the output change, not state
       pirState = HIGH;
     }
@@ -120,7 +99,7 @@ void loop(){
     digitalWrite(ledPin, LOW); // turn LED OFF
     if (pirState == HIGH){
       // we have just turned off
-      Serial.println("Motion ended!");
+      Serial.println(F("Motion ended!"));
       triggerState = 0;
       // We only want to print on the output change, not state
       pirState = LOW;
@@ -128,11 +107,44 @@ void loop(){
   }
 }
 
-void triggerProp(char Prop){
-  
-  digitalWrite(Prop2Pin, HIGH);
-  delay(clickspeed); 
-  digitalWrite(Prop2Pin, LOW); 
-  delay(clickspeed);
+void triggerProp(unsigned int Prop)
+{
+  switch (Prop) {
+    case 1:
+      Serial.println(F("[Action] >>>> Triggering Prop 1"));
+      digitalWrite(Prop1Pin, HIGH);
+      delay(clickspeed);
+      digitalWrite(Prop1Pin, LOW); 
+      break;
+    case 2:
+      // Delaying for Prop 2
+      Serial.println(F("[Paused] >>>> Prop 2 Delay"));
+      delay(delayForProp2);
+      Serial.println(F("[Action] >>>> Triggering Prop 2"));
+      digitalWrite(Prop2Pin, HIGH);
+      delay(clickspeed);
+      digitalWrite(Prop2Pin, LOW);
+      break;
+    case 3:
+      // Delaying for Prop 3
+      Serial.println(F("[Paused] >>>> Prop 3 Delay"));
+      delay(delayForProp3);
+      Serial.println(F("[Action] >>>> Triggering Prop 3"));
+      digitalWrite(Prop3Pin, HIGH);
+      delay(clickspeed);
+      digitalWrite(Prop3Pin, LOW);
+      break;
+    case 4:
+      // Delaying for Prop 4
+      Serial.println(F("[Paused] >>>> Prop 4 Delay"));
+      delay(delayForProp4);
+      Serial.println(F("[Action] >>>> Triggering Prop 4"));
+      digitalWrite(Prop4Pin, HIGH);
+      delay(clickspeed);
+      digitalWrite(Prop4Pin, LOW);
+      break;
+    default:
+      // Invalid Prop
+    break;
+  }
 }
-
