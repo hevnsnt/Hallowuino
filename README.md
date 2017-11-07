@@ -1,4 +1,5 @@
-<h1 align="center">Hallowuino v0.23</h1>
+<h1 align="center">Hallowuino v0.23.42</h1>
+<h1 align="center">I am changing the fundamental way this works, and will be making substantial commits soon.  Please do not contribute any code.</h1>
 <p align="center">Hallowuino is an Arduino based electronic Halloween prop controller.</p>
 <p align="center">
 <img src="/images/Hallowuino-pop.png" width="200" align="center">  <img src="/images/Arduino-based.png" width="200" align="center"> <br/>
